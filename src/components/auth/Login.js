@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 const Login = () => {
 
@@ -21,7 +22,13 @@ const Login = () => {
   }
 
   const onSubmit=e=>{
-    
+    e.preventDefault();
+
+    // Validar que no haya campos vacios
+
+
+
+    // pasarlo al action
   }
 
   return ( 
@@ -61,6 +68,12 @@ const Login = () => {
 
                 </div>
               </form>
+
+              <Link to={'/nueva-cuenta'} className="enlace-cuenta">
+                
+                Obtener Cuenta
+
+              </Link>
 
         </div>
       </div>
