@@ -11,7 +11,7 @@ const {proyecto} = proyectosContext;
 //obtener la funcion del context de tarea
 const tareasContext = useContext(tareaContext);
 
-const{tareaseleccionada, errortarea, agregarTarea, validarTarea, obtenerTareas, actualizarTarea}= tareasContext
+const{tareaseleccionada, errortarea, agregarTarea, validarTarea, obtenerTareas, actualizarTarea, limpiarTarea}= tareasContext
 
 //Effect que detecta si hay una tarea selecionada
 useEffect(()=>{
@@ -65,6 +65,8 @@ if(tareaseleccionada === null){
 } else {
   //actualizar tarea existente
 actualizarTarea(tarea)
+//elimina tarea seleccionada del state
+limpiarTarea()
 }
 
   
