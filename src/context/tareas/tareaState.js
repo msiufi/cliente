@@ -52,8 +52,7 @@ const tareaState = props => {
 // valida y muestra un error en caso de que sea necesario
   const validarTarea = (tarea)=>{
     dispatch({
-      type:VALIDAR_TAREA
-      
+      type:VALIDAR_TAREA      
     })
   }
 
