@@ -16,7 +16,7 @@ const initialState = {
 const [state, dispatch] = useReducer(alertaReducer, initialState);
 
 //Funciones
-const mostrarAlerta = (mge, categoria)=>{
+const mostrarAlerta = (msg, categoria)=>{
   dispatch({
     type: MOSTRAR_ALERTA,
     payload:{
