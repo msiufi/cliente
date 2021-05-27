@@ -108,7 +108,8 @@ import {
       usuario: state.usuario,
       mensaje: state.mensaje,
       registrarUsuario,
-      iniciarSesion
+      iniciarSesion,
+      usuarioAutenticado
     }}
     > {props.children}
 
