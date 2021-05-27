@@ -24,7 +24,7 @@ const [proyectoActual] = proyecto;
 
 
   const onClickEliminar=()=>{
-    eliminarProyecto(proyectoActual.id)
+    eliminarProyecto(proyectoActual._id)
   }
 
 
