@@ -8,6 +8,7 @@ const Barra = () => {
 
   useEffect(() => {
     usuarioAutenticado();
+    
   }, []);
 
   return (
